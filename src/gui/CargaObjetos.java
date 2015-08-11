@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import supermario.ObjetoJuego;
+import supermario.Suelo;
 import supermario.estructuras.Graphviz;
 import supermario.estructuras.ListaDoble;
 
@@ -93,9 +94,12 @@ public class CargaObjetos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        ObjetoJuego objeto = new ObjetoJuego();
-        objeto.setNombre(texto.getText());
+        ObjetoJuego objeto;
+        objeto.setNombre(texto.getText()+" "+jComboBox1.getSelectedItem());
         listadoble.insertar(objeto);
+        if(jComboBox1.getSelectedItem()=="Suelo"){
+        objeto = new Suelo();
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

@@ -1,5 +1,5 @@
 digraph simple {
 rankdir=LR;
-"hola "->"adios"
-"adios"->"hola "
+"suelo1 Suelo"->"mario1 Mario"
+"mario1 Mario"->"suelo1 Suelo"
 }
